@@ -1,5 +1,1 @@
-"# uzemanyagtakarekossag" 
-"# uzemanyagtakarekossag" 
-"# uzemanyagtakarekossag" 
-"# uzemanyagtakarekossag" 
-"# uzemanyagtakarekossag" 
+Iskolai projekthét alkalmából készült projekt az üzemanyagtakarékossággal kapcsolatban.
