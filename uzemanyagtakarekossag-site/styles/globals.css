@@ -5,15 +5,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@media (prefers-color-scheme: light) {
+  :root {
+  --text: #0a0a0c;
+  --background: #fbfbfe;
+  --primary: #5bce27;
+  --secondary: #a8a8c0;
+  --accent: #afcf7a;
 }
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f4f4f6;
+    --background: #010104;
+    --primary: #66d831;
+    --secondary: #3e3e56;
+    --accent: #63832f;
   }
 }
 
@@ -21,4 +30,9 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bg {
+  background-color: #5bce27;
 }
