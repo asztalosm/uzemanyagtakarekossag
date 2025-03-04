@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image'; // Import Image component if using Next.js for optimization
-import kep from './images/image.png';
-import { Quicksand } from 'next/font/google'
+import Image from 'next/image'; // Import Image component if using Next.js for optim  ization
+import { Quicksand } from 'next/font/google';
+import kep from '../public/image.png'
 
 const quicksand = Quicksand({
   subsets: ['latin'],
