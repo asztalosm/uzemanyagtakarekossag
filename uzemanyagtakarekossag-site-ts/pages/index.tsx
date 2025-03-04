@@ -6,8 +6,8 @@ import kep from '../public/image.png'
 const quicksand = Quicksand({
   subsets: ['latin'],
   variable: '--font-quicksand',
+  display: "swap",
 });
-
 
 
 export default function Document() {
@@ -17,18 +17,17 @@ export default function Document() {
         <title>Üzemanyagtakarékosság</title>
       </Head>
       <div className={`${quicksand.className}`}>
-        <header className={`bg-[#5bce27] h-40 flex items-center justify-center ${quicksand.className}`}>
-          <h1 className="text-center text-5xl">Üzemanyagtakarékosság</h1>
+        <header className={`h-50 flex items-center justify-center headergradient`}>
+          <h1 className="text-center text-6xl">Üzemanyagtakarékosság</h1>
         </header>
-        <div className="Paragrafusok mt-20 `${quicksand.className}`">
-          <Image src={kep} alt="" width={100} height={100} className='float-lefts'/>
-          <p className="{quicksand.className}">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim, sunt, sequi qui laboriosam deserunt odio minima molestias autem quaerat deleniti reiciendis corporis rerum repudiandae voluptas quasi ut, voluptate temporibus.</p>
-          <Image src={kep} alt="" width={100} height={100} className='float-right mt-30'/>
-          <p className='mt-30 text-right'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reiciendis numquam fuga at fugiat, culpa minus modi rerum ex sunt quam ab inventore vel officia maiores, officiis aut sit repellendus!</p>
+        <div className="Paragrafusok mt-20">
+          <p className=""></p>
+
+
         </div>
         <div className='w-200 ml-auto mr-auto'>
           <div className='bal bg-[#5bce27] h-100 mt-30 w-130 float-left rounded-lg'>
-            <h1 className='text-center font-bold text-xl'>Lorem</h1>
+            <h1 className='text-center font-bold text-xl root.background'>Lorem</h1>
             <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates debitis ea, fuga reprehenderit cupiditate saepe sed iusto in! Natus aperiam consequatur nesciunt minima? Aperiam obcaecati accusamus officia velit voluptatem!</p>
           </div>
           <div className='bal bg-[#5bce27] h-100 mt-30 w-65 float-right rounded-lg'>
@@ -39,15 +38,17 @@ export default function Document() {
           <br />
           <br />
         </div>
-        <h1 className='text-center text-5xl'>Összegzés</h1>
-        <div className='container mx-auto p-4 mt-10 ml-auto mr-auto'>
-          <div className="grid grid-cols-3 gap-4 justify-items-center">
-            <div className='bg-[#5bce27] h-50 w-50 rounded-lg'></div>
-            <div className='bg-[#5bce27] h-50 w-50 rounded-lg'></div>
-            <div className='bg-[#5bce27] h-50 w-50 rounded-lg'></div>
-            <div className='bg-[#5bce27] h-50 w-50 rounded-lg'></div>
-            <div className='bg-[#5bce27] h-50 w-50 rounded-lg'></div>
-            <div className='bg-[#5bce27] h-50 w-50 rounded-lg'></div>
+        <div className='mt-140'>
+          <h1 className='text-center text-6xl '>Összegzés</h1>
+          <div className='container mx-auto p-4 mt-10 ml-auto mr-auto'>
+            <div className="grid grid-cols-3 gap-6 justify-items-center">
+              <div className=' h-100 w-80 rounded-lg'></div>
+              <div className=' h-100 w-80 rounded-lg'></div>
+              <div className=' h-100 w-80 rounded-lg'></div>
+              <div className=' h-100 w-80 rounded-lg'></div>
+              <div className=' h-100 w-80 rounded-lg'></div>
+              <div className=' h-100 w-80 rounded-lg'></div>
+            </div>
           </div>
         </div>
       </div>

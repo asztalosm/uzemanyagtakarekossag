@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 
-
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -9,7 +8,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  font-family: Quicksand;
   --text: #0a0a0c;
   --background: #fbfbfe;
   --primary: #5bce27;
@@ -33,7 +31,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 
@@ -55,4 +53,9 @@ body {
 
 .font-quicksand {
   font-family: 'Quicksand', sans-serif;
+}
+
+
+.headergradient {
+  background-image: linear-gradient(0, var(--primary), var(--accent));
 }
