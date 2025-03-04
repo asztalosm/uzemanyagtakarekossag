@@ -5,7 +5,7 @@ import kep from '../public/image.png'
 
 const quicksand = Quicksand({
   subsets: ['latin'],
-  weigth: '600',
+  weight: '600',
   variable: "--font-quicksand"
 });
 
