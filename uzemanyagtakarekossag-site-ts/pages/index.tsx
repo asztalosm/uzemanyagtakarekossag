@@ -25,11 +25,11 @@ export default function Document() {
         <p className='mt-30 text-right'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reiciendis numquam fuga at fugiat, culpa minus modi rerum ex sunt quam ab inventore vel officia maiores, officiis aut sit repellendus!</p>
       </div>
       <div className='w-200 ml-auto mr-auto'>
-        <div className='bal bg-[#5bce27] h-100 mt-30 w-130 float-left'>
+        <div className='bal bg-[#5bce27] h-100 mt-30 w-130 float-left rounded-lg'>
           <h1 className='text-center font-bold text-xl'>Lorem</h1>
           <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates debitis ea, fuga reprehenderit cupiditate saepe sed iusto in! Natus aperiam consequatur nesciunt minima? Aperiam obcaecati accusamus officia velit voluptatem!</p>
         </div>
-        <div className='bal bg-[#5bce27] h-100 mt-30 w-65 float-right'>
+        <div className='bal bg-[#5bce27] h-100 mt-30 w-65 float-right rounded-lg'>
           <h1 className='text-center font-bold text-xl'>Lorem</h1>
           <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eligendi corporis, molestias aperiam molestiae vero quia, quaerat fugiat reiciendis cumque nisi laborum id ipsam. Tempore adipisci tenetur perferendis placeat velit!</p>
         </div>
