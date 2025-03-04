@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -24,6 +26,7 @@
     --primary: #66d831;
     --secondary: #3e3e56;
     --accent: #63832f;
+    font-family: 'Quicksand', sans-serif;
   }
 }
 
@@ -36,4 +39,20 @@ body {
 
 .bg {
   background-color: #5bce27;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
 }
