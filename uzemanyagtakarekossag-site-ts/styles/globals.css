@@ -8,22 +8,29 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  --text: #0a0a0c;
+  --gradientbg: #FFFFFF;
+  --foreground: #0a0a0c;
   --background: #fbfbfe;
+  --secondarybackground: #e4f5e4;
+  --gradientmain: #6bce2738;
   --primary: #5bce27;
   --secondary: #a8a8c0;
   --accent: #afcf7a;
+  font-family: 'Quicksand', sans-serif;
 }
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --gradientbg: #000000;
     --foreground: #f4f4f6;
-    --background: #010104;
+    --background: #060906;
+    --gradientmain: #66d83138;
+    --secondarybackground: #080f08;
     --primary: #66d831;
     --secondary: #3e3e56;
-    --accent: #63832f;
+    --accent: #081508;
     font-family: 'Quicksand', sans-serif;
   }
 }
@@ -58,4 +65,43 @@ body {
 
 .headergradient {
   background-image: linear-gradient(0, var(--primary), var(--accent));
+}
+
+.radial-gradient {
+  background: radial-gradient(ellipse 30% 70% at 50% 0%, var(--gradientmain), transparent);
+}
+
+
+.half-circle-top {
+  border-radius: 40% 0 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.half-circle-middle {
+  border-radius: 0 0 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.half-circle-bottom {
+  border-radius: 0 0 0 40%;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgimg1 {
+  background-image: url(../public/image.png);
+}
+
+.bgimg2 {
+  background-image: url(../public/image.png);
+}
+
+.bgimg3 {
+  background-image: url(../public/image.png);
+}
+
+.centermargin {
+  margin: 0 auto;
 }
