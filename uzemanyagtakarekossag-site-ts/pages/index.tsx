@@ -1,57 +1,82 @@
-import Head from 'next/head';
-import Image from 'next/image'; // Import Image component if using Next.js for optim  ization
-import { Quicksand } from 'next/font/google';
-import kep from '../public/image.png'
+import { Menu } from "lucide-react"
 
-const quicksand = Quicksand({
-  subsets: ['latin'],
-  variable: '--font-quicksand',
-  display: "swap",
-});
-
-
-export default function Document() {
+export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Üzemanyagtakarékosság</title>
-      </Head>
-      <div className={`${quicksand.className}`}>
-        <header className={`h-50 flex items-center justify-center headergradient`}>
-          <h1 className="text-center text-6xl">Üzemanyagtakarékosság</h1>
-        </header>
-        <div className="Paragrafusok mt-20">
-          <p className=""></p>
+    <main className="min-h-screen bg-white text-black">
+      {/* Header */}
+      <header className="bg-gradient-to-b from-[#66d831] to-[#66d831] py-6 relative">
+        <button className="absolute left-4 top-4 text-black">
+          <Menu className="h-6 w-6" />
+        </button>
+        <h1 className="text-center text-black text-3xl font-light">Üzemanyagtakarékosság</h1>
+      </header>
 
+      {/* Content Container */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        {/* Section 1 */}
+        <section className="mt-8 relative h-32 bg-[#e6e6e6]">
+          <div className="absolute right-0 top-0 h-full w-1/3 bg-[#66d831] clip-diagonal-left"></div>
+          <div className="p-6 relative z-10">
+            <h2 className="text-xl font-medium">Title1</h2>
+            <p className="text-sm">Lorem</p>
+          </div>
+        </section>
 
-        </div>
-        <div className='w-200 ml-auto mr-auto'>
-          <div className='bal bg-[#5bce27] h-100 mt-30 w-130 float-left rounded-lg'>
-            <h1 className='text-center font-bold text-xl root.background'>Lorem</h1>
-            <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates debitis ea, fuga reprehenderit cupiditate saepe sed iusto in! Natus aperiam consequatur nesciunt minima? Aperiam obcaecati accusamus officia velit voluptatem!</p>
+        {/* Section 2 */}
+        <section className="mt-8 relative h-32 bg-[#e6e6e6]">
+          <div className="absolute left-0 top-0 h-full w-1/3 bg-[#66d831] clip-diagonal-right"></div>
+          <div className="p-6 text-right relative z-10">
+            <h2 className="text-xl font-medium">Title2</h2>
+            <p className="text-sm">Lorem</p>
           </div>
-          <div className='bal bg-[#5bce27] h-100 mt-30 w-65 float-right rounded-lg'>
-            <h1 className='text-center font-bold text-xl'>Lorem</h1>
-            <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eligendi corporis, molestias aperiam molestiae vero quia, quaerat fugiat reiciendis cumque nisi laborum id ipsam. Tempore adipisci tenetur perferendis placeat velit!</p>
+        </section>
+
+        {/* Section 3 */}
+        <section className="mt-8 relative h-32 bg-[#e6e6e6]">
+          <div className="absolute right-0 top-0 h-full w-1/3 bg-[#66d831] clip-diagonal-left"></div>
+          <div className="p-6 relative z-10">
+            <h2 className="text-xl font-medium">Title3</h2>
+            <p className="text-sm">Lorem</p>
           </div>
-          <br />
-          <br />
-          <br />
-        </div>
-        <div className='mt-140'>
-          <h1 className='text-center text-6xl '>Összegzés</h1>
-          <div className='container mx-auto p-4 mt-10 ml-auto mr-auto'>
-            <div className="grid grid-cols-3 gap-6 justify-items-center">
-              <div className=' h-100 w-80 rounded-lg'></div>
-              <div className=' h-100 w-80 rounded-lg'></div>
-              <div className=' h-100 w-80 rounded-lg'></div>
-              <div className=' h-100 w-80 rounded-lg'></div>
-              <div className=' h-100 w-80 rounded-lg'></div>
-              <div className=' h-100 w-80 rounded-lg'></div>
-            </div>
+        </section>
+
+        {/* Card Section */}
+        <section className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-[#e6e6e6] rounded-lg p-6 h-72 max-w-md mx-auto w-full">
+            <h2 className="text-xl font-medium text-center mb-2">Title</h2>
+            <p className="text-sm">Paragraph</p>
           </div>
-        </div>
+          <div className="bg-[#e6e6e6] rounded-lg p-6 h-72 max-w-md mx-auto w-full">
+            <h2 className="text-xl font-medium text-center mb-2">FuelCalculator</h2>
+          </div>
+        </section>
+
+        {/* Summary Section */}
+        <section className="mt-8 mb-12">
+          <h2 className="text-xl font-medium text-center mb-8">Summary</h2>
+
+          <div className="flex flex-wrap justify-center gap-6 mb-6">
+            {[1, 2, 3].map((item) => (
+              <div key={item} className="bg-[#afcf7a] rounded-lg p-4 w-full max-w-[220px]">
+                <div className="bg-[#c5b2b2] h-32 mb-2 rounded"></div>
+                <h3 className="text-center font-medium">Title</h3>
+                <p className="text-xs">Paragraph</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-6">
+            {[1, 2, 3].map((item) => (
+              <div key={item} className="bg-[#afcf7a] rounded-lg p-4 w-full max-w-[220px]">
+                <div className="bg-[#c5b2b2] h-32 mb-2 rounded"></div>
+                <h3 className="text-center font-medium">Title</h3>
+                <p className="text-xs">Paragraph</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
-    </>
-  );
+    </main>
+  )
 }
+
