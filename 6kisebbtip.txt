@@ -1,0 +1,11 @@
+Tempomat használata: A tempomat segít egyenletes sebesség tartásában, ami üzemanyag-megtakarítást eredményez. Azonban hegyvidéken érdemes kézzel szabályozni a sebességet, hogy kihasználjuk a gravitációt.
+
+Fojtószelep állapota: A benzines motoroknál a fojtószelep teljes nyitása nem mindig előnyös, mivel a motorvezérlés ezt maximális teljesítményigényként értelmezi. Érdemes mérsékelt gázadagolással haladni.
+
+Telematikai eszközök: A járműkövető rendszerek segítenek monitorozni az autóhasználatot, így csökkentve a felesleges üzemanyag-fogyasztást. Ezek az eszközök riasztást küldenek például magas fordulatszám vagy sebesség esetén.
+
+Sebességváltás optimalizálása: Ne mindig vakon követni a váltásjelzőket, mivel nagyobb terhelésnél (pl. emelkedőn) magasabb fordulatszám mellett lehet takarékosabban haladni.
+
+Sebességkorlátozások betartása: Az előírt sebességhatárok betartása és egyenletes sebesség tartása jelentős üzemanyag-megtakarítást eredményezhet.
+
++1. Tankolási gyakoriság: Ritkábban, de nagyobb mennyiségekben tankolva csökkenthetjük az üzemanyag párolgásából eredő veszteséget. Dízelautóknál különösen fontos, hogy ne hagyjuk kiürülni az üzemanyagtartályt.
