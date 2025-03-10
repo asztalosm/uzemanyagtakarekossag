@@ -223,24 +223,28 @@ export default function Home() {
                   <input
                     type="number"
                     min="0"
-                    step="any"
+                    step="0.01"
                     placeholder="Út (km)"
                     value={distance}
-                    onChange={(e) => setDistance(e.target.value)}
-                    onInput={(e) => {
-                      e.currentTarget.value = Math.abs(Number.parseFloat(e.currentTarget.value)).toString()
+                    onChange={(e) => {
+                      const value = e.target.value
+                      if (value === "" || Number(value) >= 0) {
+                        setDistance(value)
+                      }
                     }}
                     className="w-full p-2 border rounded-md"
                   />
                   <input
                     type="number"
                     min="0"
-                    step="any"
+                    step="0.01"
                     placeholder="Fogyasztás (l/100km)"
                     value={fuelConsumption}
-                    onChange={(e) => setFuelConsumption(e.target.value)}
-                    onInput={(e) => {
-                      e.currentTarget.value = Math.abs(Number.parseFloat(e.currentTarget.value)).toString()
+                    onChange={(e) => {
+                      const value = e.target.value
+                      if (value === "" || Number(value) >= 0) {
+                        setFuelConsumption(value)
+                      }
                     }}
                     className="w-full p-2 border rounded-md"
                   />
@@ -248,7 +252,7 @@ export default function Home() {
                     type="number"
                     min="0"
                     step="any"
-                    placeholder="Benzin ár (liter)"
+                    placeholder="Benzin ár (ft/liter)"
                     value={fuelPrice}
                     onChange={(e) => setFuelPrice(e.target.value)}
                     onInput={(e) => {
